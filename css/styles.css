@@ -1,0 +1,236 @@
+/*Variables*/
+/*Mixins*/
+body {
+  padding: 0;
+  margin: 0 auto;
+  width: 1080px;
+  height: 1920px;
+  overflow: hidden;
+  background-image: url(../img/body-bg.png);
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  -moz-osx-font-smoothing: grayscale; }
+
+.text-center {
+  text-align: center; }
+
+.center-block {
+  margin: 0 auto;
+  display: block; }
+
+.white {
+  color: #ffffff; }
+
+.container {
+  display: block;
+  margin: 0 auto;
+  padding: 0; }
+
+.screen {
+  width: 1080px;
+  height: 1920px;
+  display: none; }
+
+.body-back #screen2 {
+  display: block; }
+
+.anime {
+  opacity: 0; }
+
+.remove-rotate {
+  transform: none;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  opacity: 0; }
+
+/*Screen 1 Styles*/
+#screen1 {
+  display: block;
+  background-image: url(../img/screen1-bg-new.png);
+  background-size: cover;
+  background-position: center; }
+  #screen1 img {
+    display: block;
+    margin: 40px auto; }
+  #screen1 #for-energy {
+    padding-top: 647px;
+    margin-top: 0; }
+
+.energy, .health, .fun {
+  background-image: url(../img/energy/bg.png);
+  background-color: #ffffff; }
+  .energy img, .health img, .fun img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  .energy table, .health table, .fun table {
+    display: block;
+    margin: 0 auto;
+    width: 1042px;
+    margin-top: 10px; }
+  .energy td img, .health td img, .fun td img {
+    margin: 20px; }
+  .energy #pro-tip, .health #pro-tip, .fun #pro-tip {
+    margin: 20px auto; }
+  .energy .content, .health .content, .fun .content {
+    padding-top: 4%; }
+  .energy .backButton, .health .backButton, .fun .backButton {
+    margin-top: 60px; }
+
+.health table, .fun table {
+  margin-top: 50px; }
+
+.guide {
+  overflow: hidden;
+  background-color: white; }
+  .guide .nutritionBack {
+    padding-top: 50px;
+    padding-left: 40px;
+    position: absolute;
+    left: 10px;
+    top: 8px; }
+  .guide .last {
+    height: 690px;
+    background: transparent; }
+  .guide .title {
+    padding-top: 150px;
+    padding-bottom: 50px; }
+  .guide .choices {
+    text-align: center; }
+  .guide img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block; }
+  .guide #footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2; }
+  .guide .smoothie-container {
+    height: 1920px;
+    width: 1080px;
+    overflow: hidden; }
+  .guide .smoothie-scroll {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    padding-right: 30px;
+    padding-left: 30px; }
+  .guide table.choices {
+    width: 1000px;
+    display: block;
+    margin: 0 auto; }
+    .guide table.choices td {
+      padding: 70px 40px 30px 40px;
+      width: 344px;
+      text-align: center;
+      margin: 0 auto; }
+      .guide table.choices td#smoothies {
+        background-image: url(../img/guide/smoothie-active.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat; }
+        .guide table.choices td#smoothies.active {
+          background-size: auto;
+          background-image: url(../img/guide/smoothies.png); }
+      .guide table.choices td#bowls {
+        background-image: url(../img/guide/Bowls.png);
+        background-position: center;
+        background-repeat: no-repeat; }
+        .guide table.choices td#bowls.active {
+          background-size: contain;
+          background-image: url(../img/guide/bowls-active.png); }
+      .guide table.choices td#juices {
+        background-image: url(../img/guide/juices.png);
+        background-position: center;
+        background-repeat: no-repeat; }
+        .guide table.choices td#juices.active {
+          background-size: contain;
+          background-image: url(../img/guide/juices-active.png); }
+    .guide table.choices img {
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      -webkit-transition: all 0.5s ease-in-out;
+      -ms-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out; }
+  .guide table.smoothies {
+    padding-top: 80px; }
+    .guide table.smoothies td {
+      vertical-align: top; }
+  .guide table.bowls {
+    text-align: center;
+    display: none;
+    margin-left: auto;
+    margin-right: auto; }
+    .guide table.bowls #acai {
+      margin-top: 40px; }
+    .guide table.bowls td {
+      position: relative;
+      vertical-align: bottom; }
+    .guide table.bowls img {
+      margin-left: auto;
+      margin-right: auto; }
+    .guide table.bowls #oats {
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      left: 351px;
+      right: 0; }
+  .guide table.juices {
+    display: none;
+    padding-top: 80px;
+    margin-left: auto;
+    margin-right: auto; }
+    .guide table.juices td {
+      vertical-align: bottom; }
+    .guide table.juices img {
+      margin-top: 40px;
+      margin-left: auto;
+      margin-right: auto; }
+  .guide .show {
+    display: block; }
+  .guide .hide {
+    display: none; }
+
+.nutrition {
+  background-color: white; }
+  .nutrition img {
+    margin-left: auto;
+    margin-right: auto; }
+
+.nutritionBack {
+  padding-top: 50px;
+  padding-left: 40px; }
+
+.nutritionFooter {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1 !important; }
+
+.nutritionTitle {
+  padding-top: 10px;
+  display: block;
+  position: relative;
+  z-index: 2; }
+
+.facts {
+  display: block;
+  margin: 70px auto 0 auto; }
+
+#nutrition1 {
+  background-color: white; }
+
+img#pbw {
+  width: 945px;
+  padding-top: 0; }
+
+
+
+/*# sourceMappingURL=styles.css.map */
