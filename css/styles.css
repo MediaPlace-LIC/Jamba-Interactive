@@ -1,0 +1,526 @@
+/*Variables*/
+/*Mixins*/
+body {
+  padding: 0;
+  margin: 0 auto;
+  width: 1080px;
+  height: 1920px;
+  overflow: hidden;
+  background-image: url(../img/body-bg.png);
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  -moz-osx-font-smoothing: grayscale; }
+
+.text-center {
+  text-align: center; }
+
+.center-block {
+  margin: 0 auto;
+  display: block; }
+
+.white {
+  color: #ffffff; }
+
+.container {
+  display: block;
+  margin: 0 auto;
+  padding: 0; }
+
+.screen {
+    width: 1080px;
+    height: 1920px;
+    display: none;
+    position: absolute;
+    top: 0px;
+}
+
+.body-back #screen2 {
+    display: block;
+    background-image: url(../img/Classic/Classic-Menu.png);
+}
+
+.anime {
+  opacity: 0; }
+
+.remove-rotate {
+  transform: none;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  opacity: 0; }
+
+/*Screen 1 Styles*/
+#screen1 {
+    display: inherit;
+    background-size: cover;
+    background-position: center;
+    background-color: #FFFFFF;
+}
+  #screen1 img {
+    display: inherit;
+    margin: 40px auto;
+    position: relative;
+    left: 0px;
+}
+  #screen1 #for-energy {
+
+}
+
+.energy, .health, .fun {
+  background-color: #ffffff; }
+  .energy img, .health img, .fun img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  .energy table, .health table, .fun table {
+    display: block;
+    margin: 0 auto;
+    width: 1042px;
+    margin-top: 10px; }
+  .energy td img, .health td img, .fun td img {
+    margin: 20px; }
+  .energy #pro-tip, .health #pro-tip, .fun #pro-tip {
+    margin: 20px auto; }
+  .energy .content, .health .content, .fun .content {
+     }
+  .energy .backButton, .health .backButton, .fun .backButton {
+    margin-top: 60px;
+    position: absolute;
+    top: -33px;
+    left: 677px;
+    width: 355px;
+}
+
+.health table, .fun table {
+  margin-top: 50px; }
+
+.guide {
+  overflow: hidden;
+  background-color: white; }
+  .guide .nutritionBack {
+    padding-top: 50px;
+    padding-left: 40px;
+    position: absolute;
+    left: 31px;
+    top: 8px;
+    z-index: 2;
+}
+  .guide .last {
+    height: 690px;
+    background: transparent; }
+  .guide .title {
+    padding-top: 150px;
+    padding-bottom: 50px; }
+  .guide .choices {
+    text-align: center; }
+  .guide img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block; }
+  .guide #footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2; }
+  .guide .smoothie-container {
+    height: 1920px;
+    width: 1080px;
+    overflow: hidden; }
+  .guide .smoothie-scroll {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    padding-right: 30px;
+    padding-left: 30px; }
+  .guide table.choices {
+    width: 1000px;
+    display: block;
+    margin: 0 auto; }
+    .guide table.choices td {
+      padding: 70px 40px 30px 40px;
+      width: 344px;
+      text-align: center;
+      margin: 0 auto; }
+      .guide table.choices td#smoothies {
+        background-image: url(../img/guide/smoothie-active.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat; }
+        .guide table.choices td#smoothies.active {
+          background-size: auto;
+          background-image: url(../img/guide/smoothies.png); }
+      .guide table.choices td#bowls {
+        background-position: center;
+        background-repeat: no-repeat; }
+        .guide table.choices td#bowls.active {
+          background-size: contain;
+          background-image: url(../img/guide/bowls-active.png); }
+      .guide table.choices td#juices {
+        background-image: url(../img/guide/juices.png);
+        background-position: center;
+        background-repeat: no-repeat; }
+        .guide table.choices td#juices.active {
+          background-size: contain;
+          background-image: url(../img/guide/juices-active.png); }
+    .guide table.choices img {
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      -webkit-transition: all 0.5s ease-in-out;
+      -ms-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out; }
+  .guide table.smoothies {
+    padding-top: 80px; }
+    .guide table.smoothies td {
+      vertical-align: top; }
+  .guide table.bowls {
+    text-align: center;
+    display: none;
+    margin-left: auto;
+    margin-right: auto; }
+    .guide table.bowls #acai {
+      margin-top: 40px; }
+    .guide table.bowls td {
+      position: relative;
+      vertical-align: bottom; }
+    .guide table.bowls img {
+      margin-left: auto;
+      margin-right: auto; }
+    .guide table.bowls #oats {
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      left: 351px;
+      right: 0; }
+  .guide table.juices {
+    display: none;
+    padding-top: 80px;
+    margin-left: auto;
+    margin-right: auto; }
+    .guide table.juices td {
+      vertical-align: bottom; }
+    .guide table.juices img {
+      margin-top: 40px;
+      margin-left: auto;
+      margin-right: auto; }
+  .guide .show {
+    display: block; }
+  .guide .hide {
+    display: none; }
+
+.nutrition {
+  background-color: white; }
+  .nutrition img {
+    margin-left: auto;
+    margin-right: auto;
+    z-index: auto;
+}
+
+.nutritionBack {
+    margin-top: 60px;
+    position: absolute;
+    top: -33px;
+    left: 745px;
+    width: 270px;
+}
+
+.nutritionFooter {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1 !important; }
+
+.nutritionTitle {
+    top: 0px;
+}
+
+.facts {
+  display: block;
+  margin: 70px auto 0 auto; }
+
+#nutrition1 {
+  background-color: white; }
+
+img#pbw {
+  width: 945px;
+  padding-top: 0; }
+
+
+
+/*# sourceMappingURL=styles.css.map */
+
+
+#Classic {
+    top: 706px;
+    position: absolute;
+}
+
+#bowls {
+    top: -223px;
+    position: absolute;
+}
+
+#Power {
+    position: absolute;
+    top: -289px;
+}
+
+#Shots {
+    position: absolute;
+    top: 336px;
+}
+
+
+#Plant-based {
+    position: absolute;
+    top: -584px;
+}
+
+#Juices {
+    position: absolute;
+    top: -431px;
+}
+
+#Kids {
+    position: absolute;
+    top: -259px;
+}
+
+#C1 {
+    position: absolute;
+    top: 420px;
+}
+
+#C2 {
+    position: absolute;
+    top: 520px;
+}
+
+#C3 {
+    position: absolute;
+    top: 670px;
+}
+
+#C4 {
+    position: absolute;
+    top: 800px;
+}
+
+#C5 {
+    position: absolute;
+    top: 910px;
+}
+
+#C6 {
+    position: absolute;
+    top: 1050px;
+}
+
+#C7 {
+    position: absolute;
+    top: 1200px;
+}
+
+#C8 {
+    position: absolute;
+    top: 1350px;
+}
+
+#C9 {
+    position: absolute;
+    top: 1470px;
+}
+
+#C10 {
+    position: absolute;
+    top: 1620px;
+}
+#B1 {
+    position: absolute;
+    top: 400px;
+}
+
+#B2 {
+    position: absolute;
+    top: 600px;
+}
+
+#B3 {
+    position: absolute;
+    top: 800px;
+}
+
+#B4 {
+    position: absolute;
+    top: 1000px;
+}
+
+#B5 {
+    position: absolute;
+    top: 981px;
+}
+
+#P1 {
+    position: absolute;
+    top: 400px;
+}
+
+#P2 {
+    position: absolute;
+    top: 600px;
+}
+
+#P3 {
+    position: absolute;
+    top: 800px;
+}
+
+#P4 {
+    position: absolute;
+    top: 983px;
+}
+
+#P5 {
+    position: absolute;
+    top: 1179px;
+    width: 560px;
+}
+
+#S1 {
+    position: absolute;
+    top: 510px;
+    left: 55px;
+}
+
+#S2 {
+    position: absolute;
+    top: 1051px;
+    left: 55px;
+}
+
+#S3 {
+    position: absolute;
+    top: 791px;
+    left: 55px;
+}
+
+.back {
+    position: absolute;
+    top: 37px;
+    left: 677px;
+    width: 374px;
+}
+
+#PB1 {
+    position: absolute;
+    top: 400px;
+    left: 50px;
+}
+
+#PB2 {
+    position: absolute;
+    top: 550px;
+    left: 50px;
+}
+
+#PB3 {
+    position: absolute;
+    top: 700px;
+    left: 50px;
+}
+
+#PB4 {
+    position: absolute;
+    top: 850px;
+    left: 50px;
+}
+
+#PB5 {
+    position: absolute;
+    top: 1025px;
+    left: 50px;
+}
+
+#PB6 {
+    position: absolute;
+    top: 1250px;
+    left: 50px;
+}
+
+#PB7 {
+    position: absolute;
+    top: 1500px;
+    left: 50px;
+}
+
+#PB8 {
+    position: absolute;
+    top: 1700px;
+    left: 50px;
+}
+
+.Juices-back {
+    position: absolute;
+    top: 37px;
+    left: 677px;
+    width: 374px;
+}
+
+.Kids-back {
+    position: absolute;
+    top: 37px;
+    left: 677px;
+    width: 374px;
+}
+
+#K1 {
+    position: absolute;
+    top: 400px;
+    left: 64px;
+}
+
+#K2 {
+    position: absolute;
+    top: 800px;
+    left: 64px;
+}
+
+#J1 {
+    position: absolute;
+    top: 400px;
+    left: 80px;
+}
+
+#J2 {
+    position: absolute;
+    top: 1045px;
+    left: 80px;
+}
+
+#J3 {
+    position: absolute;
+    top: 724px;
+    left: 80px;
+}
+
+#head {
+    position: absolute;
+    top: -320px;
+    right: 0px;
+    padding-left: 598px;
+}
+
+#logo {
+    position: absolute;
+    top: 47px;
+}
+
+.backButton2 {
+    position: absolute;
+    left: 693px;
+    top: 30px;
+}
